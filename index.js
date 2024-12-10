@@ -5,13 +5,16 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
 "^","&","*","(",")","_","-","+","=","{","[","}","]",",","|",":",";","<",">",
 ".","?","/"];
 
-let passwordLength = 15
+
 
 
 let themeBtn = document.querySelector(".theme-button")
 
 let passwordOne = document.getElementById("password-one")
 let passwordTwo = document.getElementById("password-two")
+let numberInput = document.getElementById("number-input-id")
+
+
 
 let copyMessage = document.getElementById("copy-password-text")
 
@@ -40,14 +43,25 @@ function modeDarkLight() {
     let paragraph2 = document.getElementById("copy-password-text")
     paragraph2.classList.toggle("p-dark-mode")
 
+    let numberDark = document.querySelector(".number-input")
+    numberDark.classList.toggle("number-input-dark")
+
     let toggleDark = bodyDiv.querySelector(".theme-button")
     toggleDark.classList.toggle("theme-button-dark")
+
+
+    let pwlengthDark = bodyDiv.querySelector(".password-length-text")
+    pwlengthDark.classList.toggle("password-length-text-dark")
+
+    let numfieldDark = bodyDiv.querySelector(".number-field")
+    numfieldDark.classList.toggle("number-field-dark")
 
     let passwordBorder = bodyDiv.querySelector(".generated-password-block")
     passwordBorder.classList.toggle("generated-password-block-dark")
 }
 
 function generatePasswords() {
+    
     copyMessage.textContent = "Click on password to copy"
     passwordOne.textContent = ""
     passwordTwo.textContent = ""
@@ -62,11 +76,19 @@ function generatePasswords() {
 // Click on password to copy
 
 function generateRandomPassword() {
-    for (i = 0; i < passwordLength; i++) {
-        let passwordOneCharacter = Math.floor(Math.random()*characters.length)
-        let passwordTwoCharacter = Math.floor(Math.random()*characters.length)
-        passwordOne.textContent += characters[passwordOneCharacter]
-        passwordTwo.textContent += characters[passwordTwoCharacter]
+    let passwordLength = numberInput.value
+        
+    if (passwordLength <= 0) {
+        copyMessage.textContent ="Set password length"
+
+    } else {
+        for (i = 0; i < passwordLength; i++) {
+            let passwordOneCharacter = Math.floor(Math.random()*characters.length)
+            let passwordTwoCharacter = Math.floor(Math.random()*characters.length)
+            passwordOne.textContent += characters[passwordOneCharacter]
+            passwordTwo.textContent += characters[passwordTwoCharacter]
+
+        }
 
     }
 }

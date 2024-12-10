@@ -12,10 +12,17 @@
 
     <body>
         <div class="body-div">
+
             <button class="theme-button" onclick="modeDarkLight()"></button>
             <h1>Generate a <span id="h1Style">random password</span></h1>
             <p>Never use an insecure password again.</p>
+
+            <div class="number-field">
+                <p class="password-length-text">Password length:</p>
+                <input type="number" class="number-input" id="number-input-id" min="5" max="20" >
+            </div>
             <button id="generate-password-button" onclick="generatePasswords()"></button>
+            
             
             <div class="generated-password-block">
                 <div id="copy-password-container">
