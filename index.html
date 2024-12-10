@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+
+<html>
+    
+    <head>
+        <title>Random Password Generator</title>
+        <link rel="stylesheet" href="index.css">
+        <!-- <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'> -->
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div class="body-div">
+            <button class="theme-button" onclick="modeDarkLight()"></button>
+            <h1>Generate a <span id="h1Style">random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <button id="generate-password-button" onclick="generatePasswords()"></button>
+            
+            <div class="generated-password-block">
+                <div id="copy-password-container">
+                    <p id="copy-password-text"></p>
+                </div>
+                
+                <div id="password-buttons">
+                    <button class="generated-password-btn" id="password-one" onclick="copyPasswordOne()"></button>
+                    <button class="generated-password-btn" id="password-two" onclick="copyPasswordTwo()"></button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- JavaScript -->
+        <script src="index.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+
+body {
+    background-color: #FFFBEB;
+    color: black;
+    font-family: 'Karla'; font-size: 20;
+    font-weight: Regular;
+    display:flex;
+    justify-content: center;
+    margin: 100px auto;
+    
+}
+
+h1 {
+    font-size: 40;
+    font-weight:800;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 40px;
+    color: #6B7280;
+}
+
+.p-dark-mode {
+    color: #D5D4D8;
+}
+
+#copy-password-text {
+    margin-bottom: 20px;
+    margin-top:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 20px;
+}
+
+.body-div {
+    background-color: #ECFDF5;
+    border: 5px solid #064E3B;
+    border-radius: 20px;
+    color: black;
+    font-family: 'Karla'; font-size: 22;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 550px;
+    width: 550px;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.body-div-dark-mode {
+    background-color:#1F2937;
+    color: #D5D4D8;
+}
+
+button {
+    background-color: #10B981;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    height: 50px;
+    width: 250px;
+    font-weight:900;
+}
+
+button:hover {
+    background-color: #059669;
+}
+
+.generated-password-btn {
+    width: 211px;
+    height: 39px;
+    background-color: #273549;
+    color: #55F991;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.generated-password-btn:hover {
+    background-color: #18212e;
+}
+
+.theme-button {
+    width: 100px;
+    height: 29px;
+    background-color: #1F2937;
+    color: #D5D4D8;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-weight:900;
+}
+
+.theme-button:hover {
+    background-color: #18212e;
+}
+
+.theme-button-dark {
+    background-color: #10B981;
+    color: white;
+    font-weight:900;
+}
+
+.theme-button-dark:hover {
+    background-color: #059669;
+}
+
+
+.generated-password-block {
+    border-top: 1px solid #D5D4D8;
+    width: 446px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.generated-password-block-dark {
+    border-top: 1px solid #2F3E53; 
+    margin: 0px;
+    padding: 0px;
+}
+
+#password-buttons {
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px;
+
+}
+
+#h1Style {
+    color: #4ADF86;
+    display: block;
+}
