@@ -56,6 +56,12 @@ function modeDarkLight() {
     let numfieldDark = bodyDiv.querySelector(".number-field")
     numfieldDark.classList.toggle("number-field-dark")
 
+    let altText = bodyDiv.querySelector(".alternative-text")
+    altText.classList.toggle("alternative-text-dark")
+
+    let altTextTwo = bodyDiv.querySelector(".alternative-text-two")
+    altTextTwo.classList.toggle("alternative-text-two-dark")
+
     let passwordBorder = bodyDiv.querySelector(".generated-password-block")
     passwordBorder.classList.toggle("generated-password-block-dark")
 }
